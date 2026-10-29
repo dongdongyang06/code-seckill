@@ -1,0 +1,23 @@
+{
+  "seckill_cases": [
+    {
+      "name": "normal_user_gets_one_unit",
+      "goods_id": 1,
+      "user_id": 1001,
+      "expect_success": true
+    },
+    {
+      "name": "another_user_gets_one_unit",
+      "goods_id": 1,
+      "user_id": 1002,
+      "expect_success": true
+    },
+    {
+      "name": "goods_not_exist",
+      "goods_id": 99999,
+      "user_id": 1003,
+      "expect_success": false,
+      "note": "goods 99999 has no stock key in redis"
+    }
+  ]
+}
